@@ -16,7 +16,9 @@ hello world
 Create release branch
 ```
 git checkout -b v1
+git add *
 git commit -a -m "v1 release"
+git push origin v1
 ```
 
 
