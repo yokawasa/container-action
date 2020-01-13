@@ -1,5 +1,25 @@
-# Container Action Template
+# Sample Docker Container Action
 
-To get started, click the `Use this template` button on this repository [which will create a new repository based on this template](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/).
+## Quickstart
 
-For info on how to build your first Container action, see the [toolkit docs folder](https://github.com/actions/toolkit/blob/master/docs/container-action.md).
+```
+# Build
+docker build -t container-action:v1.0 . 
+
+# Test Run
+docker run -it container-action:v1.0 
+hello 
+docker run -it container-action:v1.0 world
+hello world
+```
+
+Create release branch
+```
+git checkout -b v1
+git commit -a -m "v1 release"
+```
+
+
+## REFERENCES
+- [Creating Container Action](https://github.com/actions/toolkit/blob/master/docs/container-action.md)
+- [Actions Versioning](https://github.com/actions/toolkit/blob/master/docs/action-versioning.md)
