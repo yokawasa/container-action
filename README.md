@@ -4,12 +4,12 @@
 
 ```
 # Build
-docker build -t container-action:v1.0 . 
+docker build -t container-action:v1 . 
 
 # Test Run
-docker run -it container-action:v1.0 
+docker run -it container-action:v1 
 hello 
-docker run -it container-action:v1.0 world
+docker run -it container-action:v1 world
 hello world
 ```
 
